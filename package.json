@@ -1,0 +1,64 @@
+{
+  "name": "folder-structure-creator",
+  "displayName": "folder-structure-creator",
+  "description": "Create folder structures from ASCII tree representations",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/karthyick/folder-structure-creator.git"
+},
+  "activationEvents": [
+    "onCommand:folderStructureCreator.create",
+    "onCommand:folderStructureCreator.createFromClipboard",
+    "onCommand:folderStructureCreator.createFromInput"
+  ],
+  "main": "./out/extension.js",
+ "contributes": {
+  "commands": [
+    {
+      "command": "folderStructureCreator.create",
+      "title": "Folder Structure: Create"
+    },
+    {
+      "command": "folderStructureCreator.createFromClipboard",
+      "title": "Folder Structure: Create from clipboard"
+    },
+    {
+      "command": "folderStructureCreator.createFromInput",
+      "title": "Folder Structure: Create from input"
+    }
+  ],
+  "keybindings": [
+    {
+      "command": "folderStructureCreator.createFromClipboard",
+      "key": "ctrl+alt+f",
+      "mac": "cmd+alt+f"
+    }
+  ]
+},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
