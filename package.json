@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.99.0"
   },
+  "publisher": "kr",
   "categories": [
     "Other"
   ],
