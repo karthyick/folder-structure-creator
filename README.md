@@ -57,8 +57,8 @@ This extension contributes the following commands:
 Initial release of Folder Structure Creator
 
 ### Latest
-Root Folder Detection: Accepts extra spaces and both project/ or project /, trims for safety, and enforces first line is the root.
-Robust Tree Parsing: Works with mixed whitespace, pipes, and tree symbols. You can paste from most code/tree visualizers directly.
-No orphaned files/folders: Files are never created unless their parents exist.
-Feedback: Shows error/information in VS Code.
-No hard-coded limits: Arbitrarily deep folder trees work.
+- Root Folder Detection: Accepts extra spaces and both project/ or project /, trims for safety, and enforces first line is the root.
+- Robust Tree Parsing: Works with mixed whitespace, pipes, and tree symbols. You can paste from most code/tree visualizers directly.
+- No orphaned files/folders: Files are never created unless their parents exist.
+- Feedback: Shows error/information in VS Code.
+- No hard-coded limits: Arbitrarily deep folder trees work.
